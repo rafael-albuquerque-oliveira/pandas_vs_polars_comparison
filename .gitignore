@@ -1,0 +1,14 @@
+# Ambientes Virtuais
+.venv/
+env/
+
+# Dados (Ignora tudo dentro da pasta data, exceto um possível .gitkeep)
+notebook/data/*
+!data/.gitkeep
+
+# Arquivos de sistema do Mac
+.DS_Store
+
+# Cache do Python
+__pycache__/
+*.pyc
