@@ -2,13 +2,18 @@
 .venv/
 env/
 
-# Dados (Ignora tudo dentro da pasta data, exceto um possível .gitkeep)
+# Dados (Ignorando a pasta correta e abrindo a exceção no mesmo caminho)
 notebook/data/*
-!data/.gitkeep
+!notebook/data/.gitkeep
+
+# Segurança Extra (Impede CSVs/Parquets gigantes caso caiam soltos na raiz)
+*.csv
+*.parquet
 
 # Arquivos de sistema do Mac
 .DS_Store
 
-# Cache do Python
+# Cache do Python e Jupyter Notebook
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
