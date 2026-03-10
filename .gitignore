@@ -3,7 +3,7 @@
 env/
 
 # Dados (Ignorando a pasta correta e abrindo a exceção no mesmo caminho)
-notebook/data/*
+notebook/data/
 !notebook/data/.gitkeep
 
 # Segurança Extra (Impede CSVs/Parquets gigantes caso caiam soltos na raiz)
